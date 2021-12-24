@@ -3,10 +3,7 @@ import { Cliente } from "./Cliente.js";
 export class ContaCorrente{
 
     static numeroDeContas = 0;
-    agencia;
-    _cliente;
-    _saldo = 0;
-
+    
     set cliente(novoValor){
         if(novoValor instanceof Cliente){
             this._cliente = novoValor;
